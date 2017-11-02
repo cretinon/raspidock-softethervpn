@@ -1,6 +1,6 @@
 # Docker image for SoftEther VPN
 
-This will deploy a fully functional [SoftEther VPN](https://www.softether.org) server as a docker image.
+This will deploy a fully functional [SoftEther VPN](https://www.softether.org) server as a docker image on raspberry pi.
 
 Available on [Docker Hub](https://hub.docker.com/r/cretinon/raspidock-softethervpn/)
 
