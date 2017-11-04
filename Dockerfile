@@ -1,4 +1,4 @@
-FROM resin/armv7hf-debian
+FROM resin/rpi-raspbian
 
 RUN [ "cross-build-start"] 
 
