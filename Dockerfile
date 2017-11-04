@@ -15,11 +15,11 @@ RUN wget http://www.softether-download.com/files/softether/v4.20-9608-rtm-2016.0
         rm /tmp/softether-vpnserver.tar.gz &&\
         make i_read_and_agree_the_license_agreement &&\
         apt-get purge -y -q --auto-remove gcc make wget
-
-RUN [ "cross-build-end" ]  
-
 ADD runner.sh /usr/local/vpnserver/runner.sh
 RUN chmod 755 /usr/local/vpnserver/runner.sh
+
+
+RUN [ "cross-build-end" ]  
 
 EXPOSE 991/tcp 443/tcp 992/tcp 1194/tcp 1194/udp 5555/tcp 500/udp 4500/udp
 ENTRYPOINT ["/usr/local/vpnserver/runner.sh"]
